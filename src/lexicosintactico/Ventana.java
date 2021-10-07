@@ -5,6 +5,7 @@
  */
 package lexicosintactico;
 
+import com.sun.media.sound.ModelOscillator;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -89,9 +90,103 @@ public class Ventana extends javax.swing.JFrame {
         tabla.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
-                {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
-                {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
             },
             new String [] {
 
@@ -171,16 +266,15 @@ public class Ventana extends javax.swing.JFrame {
                 .addComponent(LineaError, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(Lineas, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(133, 133, 133)
-                .addComponent(txtATexto1, javax.swing.GroupLayout.PREFERRED_SIZE, 466, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtATexto1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(66, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Lineas)
+            .addComponent(Lineas, javax.swing.GroupLayout.DEFAULT_SIZE, 657, Short.MAX_VALUE)
             .addComponent(LineaError)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(25, 25, 25)
                 .addComponent(txtATexto1, javax.swing.GroupLayout.PREFERRED_SIZE, 632, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -218,7 +312,7 @@ public class Ventana extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                        .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 541, Short.MAX_VALUE))
                     .addComponent(jLabel5))
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,7 +323,7 @@ public class Ventana extends javax.swing.JFrame {
                                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
                                     .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 33, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -245,12 +339,12 @@ public class Ventana extends javax.swing.JFrame {
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(113, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(panel1Layout.createSequentialGroup()
                     .addGap(55, 55, 55)
                     .addComponent(jLabel2)
-                    .addGap(597, 1216, Short.MAX_VALUE)))
+                    .addGap(597, 1113, Short.MAX_VALUE)))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -358,15 +452,11 @@ public class Ventana extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 42, Short.MAX_VALUE))
+            .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 37, Short.MAX_VALUE))
+            .addComponent(panel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -442,51 +532,40 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        HashMap <String,Integer> r = new HashMap<>();
-        HashMap <String,Integer> op = new HashMap<>();
-        HashMap <String,Integer> id = new HashMap<>();
-        HashMap <String,Integer> deli = new HashMap<>();
-        HashMap <String,Integer> num = new HashMap<>();
-        LinkedList <String> texto = new LinkedList<>();
+        HashMap <String,Integer> Reserved_W = new HashMap<>();
+        HashMap <String,Integer> Operators = new HashMap<>();
+        HashMap <String,Integer> Identifier = new HashMap<>();
+        HashMap <String,Integer> Delimitators = new HashMap<>();
+        HashMap <String,Integer> Numbers = new HashMap<>();
+        LinkedList <String> Texts = new LinkedList<>();
     
-        r.put("BEGIN", 0);
-        r.put("END", 0);
-        r.put("WORD", 0);
-        r.put("ALFA", 0);
-        r.put("NUM", 0);
-        r.put("DNUM", 0);
-        r.put("BOOL", 0);
-        r.put("LNUM", 0);
-        r.put("TAKE", 0);
-        r.put("SEND", 0);
-        r.put("WHEN", 0);
-        r.put("IT", 0);
-        r.put("IS", 0);
-        r.put("START", 0);
-        r.put("STEP", 0);
-        r.put("TO", 0);
-        r.put("STOP", 0);
-        r.put("SWHEN", 0);
-        r.put("COMPLETE", 0);
+        Reserved_W.put("COL", 0);Reserved_W.put("ENT", 0);Reserved_W.put("TEM", 0);Reserved_W.put("DEC", 0);
+        Reserved_W.put("MEN", 0);Reserved_W.put("EST", 0);Reserved_W.put("FHR", 0);Reserved_W.put("ANG", 0);
+        Reserved_W.put("VOL", 0);Reserved_W.put("INT", 0);Reserved_W.put("DIA", 0);Reserved_W.put("REALIZA", 0);
+        Reserved_W.put("SI", 0);Reserved_W.put("DECIDE", 0);Reserved_W.put("ELIGE", 0);Reserved_W.put("PREDETERMINADO", 0);
+        Reserved_W.put("PREGUNTA", 0);Reserved_W.put("VERDAD", 0);Reserved_W.put("MENTIRA", 0);Reserved_W.put("CICLAR",0);
+        Reserved_W.put("CADA",0);Reserved_W.put("CONTROL",0);Reserved_W.put("recordar",0);Reserved_W.put("tiempoSistema",0);
+        Reserved_W.put("giro",0);Reserved_W.put("tiempoRestante",0);Reserved_W.put("capturar",0);Reserved_W.put("imprimir",0);
+        Reserved_W.put("esIgual",0);Reserved_W.put("convertir",0);Reserved_W.put("HOR",0);Reserved_W.put("ADJUNTAR",0);
+        Reserved_W.put("DOMO",0);Reserved_W.put("SPINEL",0);Reserved_W.put("RETORNAR",0);Reserved_W.put("DETENER",0);
+        Reserved_W.put("TEMPERATURA",0);Reserved_W.put("ACTIVO",0);Reserved_W.put("INACTIVO",0);Reserved_W.put("LUNES",0);
+        Reserved_W.put("MARTES",0);Reserved_W.put("MIERCOLES",0);Reserved_W.put("JUEVES",0);Reserved_W.put("VIERNES",0);
+        Reserved_W.put("SABADO",0);Reserved_W.put("DOMINGO",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);
+        Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);
         
-        op.put("/", 0);
-        op.put("*", 0);
-        op.put("+", 0);
-        op.put("-", 0);
-        op.put("=", 0);
-        op.put("^", 0);
-        op.put("<", 0);
-        op.put(">", 0);
-        op.put("||", 0);
-        op.put("&&", 0);
+        //Aritmetical operators
+        Operators.put("^", 0);Operators.put("/", 0);Operators.put("*", 0);Operators.put("+", 0);Operators.put("-", 0);Operators.put("%?",0);Operators.put("+?",0);Operators.put("-?",0);
+        //Asignation Operators
+        Operators.put("=", 0);
+        //Relational Operators
+        Operators.put("<", 0);Operators.put(">", 0);Operators.put("<?",0);Operators.put(">?",0);Operators.put("=?",0);
+        //Agrupation Operators
+        Operators.put("(",0);Operators.put(")",0);Operators.put("{",0);Operators.put("}",0);Operators.put("[",0);Operators.put("]",0);
+        ///Logical Operators
+        Operators.put("|?", 0);Operators.put("&?", 0);Operators.put("!?",0);
         
-        deli.put("#", 0);
-        deli.put(";", 0);
-        deli.put("{", 0);
-        deli.put("}", 0);
-        deli.put(")", 0);
-        deli.put(",", 0);
-        deli.put("(",0);
+        //Delimitation characters
+        Delimitators.put(";", 0);
         
         
          
@@ -499,34 +578,34 @@ public class Ventana extends javax.swing.JFrame {
         while (st.hasMoreTokens()){
             token = st.nextToken();
             if(!" ".equals(token) && !"\n".equals(token) && !"\t".equals(token)){
-                if (r.containsKey(token)) {
-                    r.put(token, r.get(token)+1);            
+                if (Reserved_W.containsKey(token)) {
+                    Reserved_W.put(token, Reserved_W.get(token)+1);            
                 }else {
-                    if (op.containsKey(token)) {
-                        op.put(token, op.get(token)+1);            
+                    if (Operators.containsKey(token)) {
+                        Operators.put(token, Operators.get(token)+1);            
                     }else {
-                        if (deli.containsKey(token)){
-                            deli.put(token, deli.get(token)+1);
-                            if("#".equals(token)){
+                        if (Delimitators.containsKey(token)){
+                            Delimitators.put(token, Delimitators.get(token)+1);
+                            if(";".equals(token)){
                                 token = st.nextToken();
-                                while (st.hasMoreTokens() && !"#".equals(token)){
+                                while (st.hasMoreTokens() && !";".equals(token)){
                                     text += token;
                                     token = st.nextToken();
                                 }
-                                texto.add(text);
-                                deli.put(token, deli.get(token)+1);
+                                Texts.add(text);
+                                Delimitators.put(token, Delimitators.get(token)+1);
                                 text = "";
                             }
                         }else {
-                            if (id.containsKey(token)) {
-                                id.put(token, id.get(token)+1); 
+                            if (Identifier.containsKey(token)) {
+                                Identifier.put(token, Identifier.get(token)+1); 
                             }else {
                                 if(token.matches("([0-9]*)|([0-9]*.[0-9]+)")) {
-                                    if (num.containsKey(token)) {
-                                        num.put(token, num.get(token)+1);
-                                    }else num.put(token, 1); 
+                                    if (Numbers.containsKey(token)) {
+                                        Numbers.put(token, Numbers.get(token)+1);
+                                    }else Numbers.put(token, 1); 
                                 }
-                                else id.put(token, 1); 
+                                else Identifier.put(token, 1); 
                             }
                         }
                     }
@@ -534,35 +613,35 @@ public class Ventana extends javax.swing.JFrame {
             }
         }
         
-        Iterator<String> itr = r.keySet().iterator();
+        Iterator<String> itr = Reserved_W.keySet().iterator();
         while(itr.hasNext()){
             token = itr.next();
-            if(r.get(token) > 0)model.addRow(new Object[]{token, r.get(token),"Palabra Reservada"});
+            if(Reserved_W.get(token) > 0)model.addRow(new Object[]{token, Reserved_W.get(token),"Palabra Reservada"});
         } 
-        itr = op.keySet().iterator();
+        itr = Operators.keySet().iterator();
         while(itr.hasNext()){
             token = itr.next();
-            if(op.get(token) > 0) model.addRow(new Object[]{token, op.get(token),"Operador"});
+            if(Operators.get(token) > 0) model.addRow(new Object[]{token, Operators.get(token),"Operador"});
         } 
-        itr = deli.keySet().iterator();
+        itr = Delimitators.keySet().iterator();
         while(itr.hasNext()){
             token = itr.next();
-            if(deli.get(token) > 0) model.addRow(new Object[]{token, deli.get(token),"Delimitador"});
+            if(Delimitators.get(token) > 0) model.addRow(new Object[]{token, Delimitators.get(token),"Delimitador"});
         } 
-        itr = id.keySet().iterator();
+        itr = Identifier.keySet().iterator();
         while(itr.hasNext()){
             token = itr.next();
-            if(id.get(token) > 0) model.addRow(new Object[]{token, id.get(token),"Identificador"});
+            if(Identifier.get(token) > 0) model.addRow(new Object[]{token, Identifier.get(token),"Identificador"});
         } 
-        itr = num.keySet().iterator();
+        itr = Numbers.keySet().iterator();
         while(itr.hasNext()){
             token = itr.next();
-            if(num.get(token) > 0) {
-                if(token.matches("[0-9]+"))model.addRow(new Object[]{token, num.get(token),"Número"});
-                if(token.matches("[0-9]+.[0-9]+"))model.addRow(new Object[]{token, num.get(token),"Número Decimal"});
+            if(Numbers.get(token) > 0) {
+                if(token.matches("[0-9]+"))model.addRow(new Object[]{token, Numbers.get(token),"Número"});
+                if(token.matches("[0-9]+.[0-9]+"))model.addRow(new Object[]{token, Numbers.get(token),"Número Decimal"});
             }
         }
-        itr = texto.iterator();
+        itr = Texts.iterator();
         while(itr.hasNext()){
             model.addRow(new Object[]{itr.next(), "1","Texto"});
             
