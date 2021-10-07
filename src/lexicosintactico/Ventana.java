@@ -58,12 +58,12 @@ public class Ventana extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         tabla = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnAn_Lexico = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
         jScrollPane5 = new javax.swing.JScrollPane();
         Error = new javax.swing.JEditorPane();
-        jButton2 = new javax.swing.JButton();
+        btnAnSin_Sem = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         txtATexto1 = new javax.swing.JEditorPane();
@@ -89,104 +89,9 @@ public class Ventana extends javax.swing.JFrame {
 
         tabla.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         tabla.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {},
-                {}
+            new Object [][] {{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
+                {},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},
+                {},{},{},{},{},{},{},{},{},{},{},{}
             },
             new String [] {
 
@@ -199,13 +104,13 @@ public class Ventana extends javax.swing.JFrame {
         jLabel2.setText("Texto del Archivo");
         jLabel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 204));
-        jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Table.png"))); // NOI18N
-        jButton1.setText("Generar Tabla Análisis Léxico");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAn_Lexico.setBackground(new java.awt.Color(204, 204, 204));
+        btnAn_Lexico.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAn_Lexico.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Table.png"))); // NOI18N
+        btnAn_Lexico.setText("Generar Tabla Análisis Léxico");
+        btnAn_Lexico.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAn_LexicoActionPerformed(evt);
             }
         });
 
@@ -229,12 +134,12 @@ public class Ventana extends javax.swing.JFrame {
         Error.setForeground(java.awt.Color.blue);
         jScrollPane5.setViewportView(Error);
 
-        jButton2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Component.png"))); // NOI18N
-        jButton2.setText("Análisis Sintáctico - Semántico");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btnAnSin_Sem.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        btnAnSin_Sem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/Component.png"))); // NOI18N
+        btnAnSin_Sem.setText("Análisis Sintáctico - Semántico");
+        btnAnSin_Sem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btnAnSin_SemActionPerformed(evt);
             }
         });
 
@@ -327,8 +232,8 @@ public class Ventana extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                                 .addGap(0, 0, Short.MAX_VALUE)
                                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton2))
+                                    .addComponent(btnAn_Lexico, javax.swing.GroupLayout.PREFERRED_SIZE, 265, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(btnAnSin_Sem))
                                 .addGap(87, 87, 87))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -366,9 +271,9 @@ public class Ventana extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(panel1Layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnAn_Lexico, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnAnSin_Sem, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(btnTraducir, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
@@ -531,14 +436,15 @@ public class Ventana extends javax.swing.JFrame {
 }
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnAn_LexicoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAn_LexicoActionPerformed
         HashMap <String,Integer> Reserved_W = new HashMap<>();
         HashMap <String,Integer> Operators = new HashMap<>();
         HashMap <String,Integer> Identifier = new HashMap<>();
         HashMap <String,Integer> Delimitators = new HashMap<>();
         HashMap <String,Integer> Numbers = new HashMap<>();
         LinkedList <String> Texts = new LinkedList<>();
-    
+
+        //Rserved words
         Reserved_W.put("COL", 0);Reserved_W.put("ENT", 0);Reserved_W.put("TEM", 0);Reserved_W.put("DEC", 0);
         Reserved_W.put("MEN", 0);Reserved_W.put("EST", 0);Reserved_W.put("FHR", 0);Reserved_W.put("ANG", 0);
         Reserved_W.put("VOL", 0);Reserved_W.put("INT", 0);Reserved_W.put("DIA", 0);Reserved_W.put("REALIZA", 0);
@@ -550,8 +456,8 @@ public class Ventana extends javax.swing.JFrame {
         Reserved_W.put("DOMO",0);Reserved_W.put("SPINEL",0);Reserved_W.put("RETORNAR",0);Reserved_W.put("DETENER",0);
         Reserved_W.put("TEMPERATURA",0);Reserved_W.put("ACTIVO",0);Reserved_W.put("INACTIVO",0);Reserved_W.put("LUNES",0);
         Reserved_W.put("MARTES",0);Reserved_W.put("MIERCOLES",0);Reserved_W.put("JUEVES",0);Reserved_W.put("VIERNES",0);
-        Reserved_W.put("SABADO",0);Reserved_W.put("DOMINGO",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);
-        Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);
+        Reserved_W.put("SABADO",0);Reserved_W.put("DOMINGO",0);Reserved_W.put("CICLAR",0);//Reserved_W.put("CICLAR",0);
+        //Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);Reserved_W.put("CICLAR",0);
         
         //Aritmetical operators
         Operators.put("^", 0);Operators.put("/", 0);Operators.put("*", 0);Operators.put("+", 0);Operators.put("-", 0);Operators.put("%?",0);Operators.put("+?",0);Operators.put("-?",0);
@@ -647,9 +553,9 @@ public class Ventana extends javax.swing.JFrame {
             
         }
         tabla.setModel(model);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnAn_LexicoActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btnAnSin_SemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnSin_SemActionPerformed
         errores=0;
         LinkedList <String> ENT = new LinkedList<>();
         LinkedList <String> DEC = new LinkedList<>();
@@ -1165,7 +1071,7 @@ public class Ventana extends javax.swing.JFrame {
         }
                
              
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btnAnSin_SemActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         txtATexto1.setText("");
@@ -1499,8 +1405,8 @@ public class Ventana extends javax.swing.JFrame {
                                         txtATraducido.setText(a);
                                     }
                                 }
-                            }*/
-                            /*if(tuken.contains("STEP")){
+                            }
+                            if(tuken.contains("STEP")){
                                  JOptionPane.showMessageDialog(null,"Encontre STEP");
                                 String tokesito;
                                 StringTokenizer tuk= new StringTokenizer(tuken," ");
@@ -1553,9 +1459,9 @@ public class Ventana extends javax.swing.JFrame {
                                         txtATraducido.setText(a);
                                     }
                                 }
-                            }*/
+                            }
                             
-                             /*if(tuken.contains(" ")){
+                             if(tuken.contains(" ")){
                                   JOptionPane.showMessageDialog(null,"Encontre espacio");
                                 String tokesito;
                                 StringTokenizer tuk= new StringTokenizer(tuken," ");
@@ -1599,8 +1505,8 @@ public class Ventana extends javax.swing.JFrame {
                                
                                 txtATraducido.setText(a);
                                 
-                            }*/
-                            /*if(tuken.contains("START")==false && tuken.contains("STEP")==false && tuken.contains("{")==false&& tuken.contains(entero)==false){
+                            }
+                            if(tuken.contains("START")==false && tuken.contains("STEP")==false && tuken.contains("{")==false&& tuken.contains(entero)==false){
                                  JOptionPane.showMessageDialog(null,"Encontre otra cosa");
                                  String tokesito="";
                                 StringTokenizer tuk= new StringTokenizer(tuken," ");
@@ -1814,9 +1720,9 @@ public class Ventana extends javax.swing.JFrame {
     private javax.swing.JEditorPane Error;
     private javax.swing.JEditorPane LineaError;
     private javax.swing.JEditorPane Lineas;
+    private javax.swing.JButton btnAnSin_Sem;
+    private javax.swing.JButton btnAn_Lexico;
     private javax.swing.JButton btnTraducir;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
