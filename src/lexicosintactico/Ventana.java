@@ -492,9 +492,9 @@ public class Ventana extends javax.swing.JFrame {
                     }else {
                         if (Delimitators.containsKey(token)){
                             Delimitators.put(token, Delimitators.get(token)+1);
-                            if(";".equals(token)){
+                            if("#".equals(token)){
                                 token = st.nextToken();
-                                while (st.hasMoreTokens() && !";".equals(token)){
+                                while (st.hasMoreTokens() && !"#".equals(token)){
                                     text += token;
                                     token = st.nextToken();
                                 }
